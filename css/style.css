@@ -42,6 +42,17 @@
     background-color: rgba(203, 203, 203, 0.415)
 }
 
+/* video and file upload */
+.img-file-preview-container img {
+    height: 140px;
+}
+
+.img-file-preview-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
 /* form button */
 .form-submit-btn {
     width: 50%;

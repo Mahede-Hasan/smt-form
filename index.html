@@ -12,6 +12,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/ez-media-uploader.css" />
 
+
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -96,89 +97,42 @@
                     <div class="border-bottom mb-4">
                         <p class="general-section-header fw-semibold ps-4">Image & Video</p>
                     </div>
+
+                    <!-- thumbnail -->
                     <div class="form-group px-4 py-2">
                         <div id="thumbnail-uploader" class="ez-media-uploader" data-type="images"
                             data-min-file-items="0" data-max-file-items="1" data-max-file-size="10000"
                             data-max-total-file-size="0" data-allow-multiple="1" data-show-alerts="1"
                             data-show-file-size="1" data-featured="false" data-allow-sorting="1" data-show-info="1"
                             data-uploader-type="file">
-                            <div class="ezmu__loading-section ezmu--show">
-                                <span class="ezmu__loading-icon">
-                                    <span class="ezmu__loading-icon-img-bg"></span>
-                                </span>
-                            </div>
 
-                            <div class="ezmu__old-files">
-                                <span class="ezmu__old-files-meta" data-attachment-id="1"
-                                    data-url="https://images.unsplash.com/photo-1501183007986-d0d080b147f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-                                    data-size="5" data-type="image"></span>
-                                <span class="ezmu__old-files-meta" data-attachment-id="2"
-                                    data-url="https://images.unsplash.com/photo-1575761410364-8a3eb7e4edfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-                                    data-size="200" data-type="image"></span>
-                                <span class="ezmu__old-files-meta" data-attachment-id="3"
-                                    data-url="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=750&q=80"
-                                    data-size="200" data-type="image"></span>
-                                <span class="ezmu__old-files-meta" data-attachment-id="4"
-                                    data-url="https://plus.unsplash.com/premium_photo-1666896192348-dbd2afd19b07?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    data-size="200" data-type="image"></span>
-                                <span class="ezmu__old-files-meta" data-attachment-id="5"
-                                    data-url="https://images.unsplash.com/photo-1431411207774-da3c7311b5e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    data-size="200" data-type="image"></span>
-                            </div>
+                            <!-- file image container -->
+                           <div class="img-file-preview-container">
+                            <img src="images/file-img (1).jpg" alt="">
+                            <img src="images/file-img (2).jpg" alt="">
+                            <img src="images/file-img (3).jpg" alt="">
+                            <img src="images/file-img (4).jpg" alt="">
+                            <img src="images/file-img (5).jpg" alt="">
+                           </div>
 
-                            <div class="ezmu-dictionary">
-                                <!-- Label Texts -->
-                                <span class="ezmu-dictionary-label-featured">Featured</span>
-                                <span class="ezmu-dictionary-label-drag-n-drop">Drag & Drop</span>
-                                <span class="ezmu-dictionary-label-drop-here">Drag Files Here</span>
-                                <span class="ezmu-dictionary-label-or">or</span>
-                                <span class="ezmu-dictionary-label-select-files">Choose</span>
-                                <span class="ezmu-dictionary-label-add-more">Add More</span>
-                                <span class="ezmu-dictionary-label-change">Change</span>
+                        </div>
 
-                                <!-- Alert Texts -->
-                                <span class="ezmu-dictionary-alert-max-file-size">
-                                    The maximum limit for a file is __DT__
-                                </span>
-                                <span class="ezmu-dictionary-alert-max-total-file-size">
-                                    The maximum limit for total file size is __DT__
-                                </span>
-                                <span class="ezmu-dictionary-alert-min-file-items">
-                                    The minimum limit for total file is __DT__
-                                </span>
-                                <span class="ezmu-dictionary-alert-max-file-items">
-                                    The maximum limit for total file is __DT__
-                                </span>
-
-                                <!-- Info Text -->
-                                <span class="ezmu-dictionary-info-max-file-size" data-show='5'>
-                                    The maximum allowed file size is __DT__
-                                </span>
-                                <span class="ezmu-dictionary-info-max-total-file-size" data-show='5'>
-                                    The maximum total allowed file size is __DT__
-                                </span>
-                                <span class="ezmu-dictionary-info-min-file-items" data-show='1'>
-                                    The minimum __DT__ files are required
-                                </span>
-                                <span class="ezmu-dictionary-info-max-file-items" data-show='5' data-featured="5"
-                                    data-pin="1">
-                                    Unlimited files are allowed
-                                </span>
-                                <span class="ezmu-dictionary-info-type" data-show='1'>
-                                    Allowed file types are __DT__
-                                </span>
-                            </div>
+                        <!-- file input -->
+                        <div class="d-flex justify-content-center mt-4">
+                            <input type="file" id="">
                         </div>
                     </div>
-
+                    <!-- video input -->
                     <div class="px-4">
                         <p class="fw-semibold mb-2">Video:</p>
                         <input type="url" class="form-input-field w-100 mb-4 py-2"
                             placeholder="Only YouTube & Video URLs.">
                     </div>
                 </section>
+            
             </div>
 
+            <!-- submit button -->
             <div class="d-flex justify-content-center">
                 <button class="form-submit-btn" type="submit">Submit</button>
             </div>
@@ -186,19 +140,6 @@
         </form>
     </section>
 
-
-    <!-- js link -->
-    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="./js/ez-media-uploader.js"></script>
-    <script src="./js/main.js"></script>
 
     <!-- bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
